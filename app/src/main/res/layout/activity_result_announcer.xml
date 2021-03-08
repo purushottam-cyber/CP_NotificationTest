@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultAnnouncer">
+
+    <LinearLayout
+        android:id="@+id/topSub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submissioninfogradient1"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+
+        <TextView
+            style="@style/resultSubmissionBlocks"
+            android:text="Problem:-"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/problemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="	#FF0000"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            tools:text="A gingle bells" />
+
+
+        <TextView
+            style="@style/resultSubmissionBlocks"
+
+            android:text="Submission ID:-"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/juryID"
+            style="@style/resultSubmissionBlocks"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="	#0000ff"
+            android:textSize="18sp"
+            tools:text="1021454" />
+
+        <TextView
+            style="@style/resultSubmissionBlocks"
+            android:text="JURY VERDICT:-"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/juryVerdict"
+            style="@style/resultSubmissionBlocks"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#654321  "
+            android:textSize="18sp"
+            tools:text="COMPILATION ERROR" />
+
+        <TextView
+            style="@style/resultSubmissionBlocks"
+            android:text="passed cases:-"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/passedTest"
+            style="@style/resultSubmissionBlocks"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            tools:text="28 cases passed" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topSub"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/submissioninfogradient2"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/userHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="Candidate Info "
+            android:textAlignment="center"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="	#FF0000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/resultSubmissionBlocks"
+            android:text=" Candidate :-"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Name"
+            style="@style/resultSubmissionBlocks"
+            android:textColor="#301934 "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="0NE_MORE_TIME" />
+
+        <TextView
+            style="@style/resultSubmissionBlocks"
+            android:text="Maximum Rating:-"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Rating"
+            style="@style/resultSubmissionBlocks"
+            android:textColor="#301934 "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="RATING " />
+
+        <TextView
+            style="@style/resultSubmissionBlocks"
+            android:text="Rank :-"
+            android:textAppearance="@style/Text_blocks"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Rank"
+            style="@style/resultSubmissionBlocks"
+            android:textColor="#301934 "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="RANK" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -214,7 +214,7 @@ public class ResultAnnouncer extends AppCompatActivity implements LoaderManager.
 
         String current = data.getVerdict();
 
-        if(current.equalsIgnoreCase("wait"))return;;
+        if(current.equalsIgnoreCase("wait"))return;
 
         if (current.equalsIgnoreCase("TESTING")) {
             juryVerdict.setText("TESTING...");
